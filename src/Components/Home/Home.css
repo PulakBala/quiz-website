@@ -1,0 +1,7 @@
+.img{
+    height: 340px;
+    background-image: url('../../Images/quiz3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100vw 400px;
+}
