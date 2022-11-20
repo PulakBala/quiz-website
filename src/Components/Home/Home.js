@@ -1,13 +1,22 @@
-import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Subject from '../Subject/Subject';
 import './Home.css'
 const Home = () => {
+    const subjects = useLoaderData();
+    const subDisplay = subjects.data
+    console.log(subDisplay)
     return (
         <div className=''>
             <div className='img'>
                 <h2 className='text-lg py-8 ml-96'>During the Quiz-test , <br/> do not open other tabs in the  browser or windows with the site "lms" <br/> Stay on this site until quiz-test is complete. Otherwise, it will be terminates with the status FAILED.</h2>
             </div>
-            <div>
-               <h2>This is home page</h2>
+            <div className='flex gap-8 mt-12 justify-around mb-10'>
+               {
+                    subDisplay.map(sub => <Subject
+                        key={sub.id}
+                        sub={sub}
+                    ></Subject>)
+               }
             </div>
         </div>
     );
