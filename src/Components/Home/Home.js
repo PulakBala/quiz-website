@@ -4,7 +4,7 @@ import './Home.css'
 const Home = () => {
     const subjects = useLoaderData();
     const subDisplay = subjects.data
-    console.log(subDisplay)
+   
     return (
         <div className=''>
             <div className='img'>
@@ -15,6 +15,7 @@ const Home = () => {
                     subDisplay.map(sub => <Subject
                         key={sub.id}
                         sub={sub}
+                      
                     ></Subject>)
                }
             </div>
