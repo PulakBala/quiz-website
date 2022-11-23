@@ -2,6 +2,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './Components/Blog/Blog';
+import CssQuiz from './Components/CssQuiz/CssQuiz';
 import Home from './Components/Home/Home';
 import JavaScript from './Components/JavaScript/JavaScript';
 import ReactQuestion from './Components/ReactQuestion/ReactQuestion';
@@ -50,6 +51,13 @@ function App() {
             return fetch('https://openapi.programming-hero.com/api/quiz/2')
           },
           element: <JavaScript></JavaScript>
+        },
+        {
+          path: 'quiz/4',
+          loader: async () =>{
+            return fetch('https://openapi.programming-hero.com/api/quiz/4')
+          },
+          element: <CssQuiz></CssQuiz>
         }
         
       ]

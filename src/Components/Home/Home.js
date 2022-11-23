@@ -14,8 +14,7 @@ const Home = () => {
                {
                     subDisplay.map(sub => <Subject
                         key={sub.id}
-                        sub={sub}
-                      
+                        sub={sub}                    
                     ></Subject>)
                }
             </div>
