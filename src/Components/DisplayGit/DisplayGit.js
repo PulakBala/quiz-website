@@ -1,7 +1,12 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+import { EyeIcon } from '@heroicons/react/24/solid'
 const DisplayGit = ({git}) => {
     const {options,question,correctAnswer} = git;
+
+    const correctAns=() =>{ 
+        toast(correctAnswer)
+    }
 
     const quizToast =(params) =>{
         if(correctAnswer === params){
@@ -14,7 +19,10 @@ const DisplayGit = ({git}) => {
     }
     return (
         <div className='border w-9/12 my-8 bg-orange-100 py-10 rounded-lg'>
+            <div className='flex justify-evenly'>
             <h2 className='text-xl'> <small className='text-2xl font-bold-300'>Question:</small> {question}</h2>
+            <EyeIcon onClick={()=>correctAns()} className='h-10  pr-4 mt-14'/>
+            </div>
 
            <form className='grid grid-cols-2 place-content-center h-auto p-4 gap-10 mt-12'>
                
