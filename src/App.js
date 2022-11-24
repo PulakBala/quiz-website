@@ -6,6 +6,7 @@ import CssQuiz from './Components/CssQuiz/CssQuiz';
 import GitQuiz from './Components/GitQuiz/GitQuiz';
 import Home from './Components/Home/Home';
 import JavaScript from './Components/JavaScript/JavaScript';
+import NotFound from './Components/NotFound/NotFound';
 import ReactQuestion from './Components/ReactQuestion/ReactQuestion';
 import Statistics from './Components/Statistics/Statistics';
 import Topics from './Components/Topics/Topics';
@@ -66,9 +67,14 @@ function App() {
             return fetch('https://openapi.programming-hero.com/api/quiz/5')
           },
           element:<GitQuiz></GitQuiz>
+        },
+        {
+          path: '/*',
+          element:<NotFound></NotFound>
         }
         
-      ]
+      ],
+         
     }
   ])
   return (
