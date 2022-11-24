@@ -5,7 +5,7 @@ import DisplayCss from '../DisplayCss/DisplayCss';
 const CssQuiz = () => {
     const cssQuiz = useLoaderData();
     const displayCss = cssQuiz.data.questions;
-    console.log(cssQuiz.data.questions);
+   
     return (
         <div className='grid justify-items-center'>
             <h2 className='text-3xl font-bold mt-8'>Quiz of CSS</h2>
