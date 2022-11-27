@@ -6,8 +6,7 @@ const Statistics = () => {
     const totalQuestion = useLoaderData();
     const data = totalQuestion.data;
     return (
-        <div>
-            <h2>This is Statistics page</h2>
+        <div className='flex justify-center mt-10'>
             <LineChart width={500} height={400} data={data}>
             <Line type="monotone" dataKey="name" />
             <Line type="monotone" datakey="total"/>
@@ -16,7 +15,7 @@ const Statistics = () => {
             <YAxis dataKey="total"/>
             <Tooltip/>
             <Legend/>
-         </LineChart>
+            </LineChart>
         </div>
     );
 };
