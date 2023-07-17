@@ -6,7 +6,7 @@ const Topics = () => {
     const topics = useLoaderData();
     const topicsItem = topics.data;
     return (
-        <div className='flex gap-8 mt-12 justify-around mb-10 '>
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols gap-8 mt-12 justify-around mb-10 '>
            
             {
                 topicsItem.map(topic => <DisplayTopic

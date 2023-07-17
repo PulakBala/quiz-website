@@ -28,7 +28,7 @@ const DispalyReact = ({react}) => {
            <EyeIcon onClick={()=>correctAns()} className='h-10  pr-4 mt-14'/>
            </div>
            
-           <form className='grid grid-cols-2 place-content-center h-auto p-4 gap-10 mt-12'>
+           <form className='grid lg:grid-cols-2 grid-cols place-content-center h-auto p-4 gap-10 mt-12'>
                
                 <p  className='border border-red-900 h-20  flex items-center justify-center'> 
 

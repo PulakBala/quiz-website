@@ -5,7 +5,7 @@ const DisplayTopic = ({topic}) => {
     const {id , name, logo} = topic;
     return (
         <div className='shadow-2xl rounded-lg'>
-                <img className='bg-zinc-400 w-72' src={logo} alt="" />
+                <img className='bg-zinc-400 w-full' src={logo} alt="" />
             <div className='flex justify-between mt-4'>
                 <h2 className='p-2 text-2xl font-bold'>{name}</h2>
 

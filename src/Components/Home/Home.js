@@ -6,11 +6,11 @@ const Home = () => {
     const subDisplay = subjects.data
    
     return (
-        <div className='grid'>
+        <div className='grid bg-orange-100'>
             <div className='img'>
-                <h2 className='text-lg py-8 ml-96'>During the Quiz-test , <br/> do not open other tabs in the  browser or windows with the site "lms" <br/> Stay on this site until quiz-test is complete. Otherwise, it will be terminates with the status FAILED.</h2>
+                <h2 className='text-lg py-8 ml-96 hidden lg:block'>During the Quiz-test , <br/> do not open other tabs in the  browser or windows with the site "lms" <br/> Stay on this site until quiz-test is complete. Otherwise, it will be terminates with the status FAILED.</h2>
             </div>
-            <div className='flex lg:flex-row md:flex-col gap-8 mt-12 justify-around mb-10'>
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols  md:justify-center justify-center gap-6 mt-20 mb-12  '>
                {
                     subDisplay.map(sub => <Subject
                         key={sub.id}
